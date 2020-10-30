@@ -24,6 +24,16 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        
+        let last = fruits.pop();
+        let first = fruits.shift();
+        let newLength = fruits.unshift('Banana');
+        let newLength2 = fruits.push('Kiwi');
+        for (let i=0; i<fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+    
+    });
 
 })();

@@ -11,8 +11,13 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
+    let date= new Date();
+    console.log(date);
+    let weekday = date.toLocaleString('En-EN', {weekday: 'long'});
+    let day = date.getDate();
+    let month = date.toLocaleString ('en-EN', {month: 'long'});
+    let year = date.getFullYear();
+    let hours = date.getHours() + 'h' + date.getMinutes();
+    document.getElementById('target').innerHTML= weekday + " " + day + " " + month + " " + year + ", " + hours;
 
 })();

@@ -12,5 +12,19 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    let tab = []
+        for (i=0; i<5; i++){
+            tab.push([keys[i], values[i]]);
+        }
+
+        let map = new Map([...tab]);
+        let items = Object.fromEntries(map);
+    
+    document.getElementById("run").addEventListener("click", function() {
+
+        console.log(items);
+
+    });
+
 })();

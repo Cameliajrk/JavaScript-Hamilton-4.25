@@ -11,6 +11,34 @@
 
 (function() {
 
-    // your code here
+        document.getElementById("run").addEventListener("click", function() {
+
+            
+            
+            // let today = new Date();
+            // console.log(today);
+            // let jour = today.getDay();
+            // console.log(jour);
+            // let year = today.getFullYear();
+            // // console.log(year);
+            // let month = today.getMonth() + 1;
+            // // console.log(month);
+            // let day = today.getDate();
+            // // console.log(day);
+            let annee = parseInt(document.getElementById("year").value);
+            console.log(annee);
+
+            let somme= 0;
+            let day, month;
+            for (month=1; month<13; month++){
+                for (day=1; day<32; day++){
+                        if (day==13){
+                            somme++;
+                        }
+                    }
+                }
+            alert(somme);
+    
+        });
 
 })();

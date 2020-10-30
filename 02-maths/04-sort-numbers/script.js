@@ -15,7 +15,12 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        // let numbers=parseInt(document.getElementById("numbers").value);
+        let numbers=[2, 4, 14, 10, 90, 23, 16];
+        numbers.sort(function(a,b) {
+            return a-b;
+        });
+        alert(numbers);
 
     });
 

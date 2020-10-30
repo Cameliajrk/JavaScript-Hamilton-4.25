@@ -12,8 +12,9 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
+        for(let i=1; i<=21; i++) {
+            alert(Math.pow(i, 2));
+        }
 
     });
 

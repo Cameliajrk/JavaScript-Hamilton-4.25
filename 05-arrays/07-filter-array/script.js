@@ -89,6 +89,22 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        const people2 = [];
+        let i, j=0;
+
+        for (i=0; i<people.length; i++) {
+            if (people[i].age > 18){
+                people2[j]=people[i];
+                j++;
+            }
+        }
+
+        for (i=0; i<people2.length; i++){
+            console.log(people2[i]);
+        }
+
+    
+    });
 
 })();

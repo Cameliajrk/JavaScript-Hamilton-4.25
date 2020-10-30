@@ -26,6 +26,19 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        
+        let i, apple;
+        for (i=0; i<fruits.length; i++){
+            if (fruits[i]==="apple"){
+                apple=true;
+            }
+        }
+        if (apple){
+            console.log('There is an apple in the array fruits.');
+        } else { console.log('There is no apple in the array fruits.');
+        }
+    
+    });
 
 })();

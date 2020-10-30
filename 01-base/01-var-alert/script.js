@@ -10,9 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    const message = "Hello, World!";
-
-    alert(message);
+    let whatever = "hello world!!!";
+    alert(whatever);
+    // your code here
 
 })();

@@ -89,6 +89,16 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        let position;
+        for (let i=0; i<people.length; i++){
+            if ((people[i].lastname.toLowerCase()==='dupont') && (people[i].firstname.toLowerCase()==='jean')) {
+                position = i;
+            }
+        }
+        console.log(position);
+        console.log(people[position].email);
+    
+    });
 
 })();

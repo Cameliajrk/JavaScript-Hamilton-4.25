@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
+    let accept = false;
+    while (accept==false) {
+        let name=prompt('What\'s your name?');
+        let gender=prompt('What\'s your gender?');
+        let town=prompt('In which town do you live?');
+        if (confirm(name + gender + town +' Ces informations sont-elles correctes?')) {
+            alert('Merci.');
+            accept=true;
+        } else {
+            accept=false;
+        }
+    }
 
-    // your code here
-
+    // if (confirm('Vous vous appelez' + name + '. Vous êtes une' + gender + 'et vous vivez à' + town.'Ces informations sont-elles correctes?')) {
+    //     alert('Merci.');
+    // } 
 })();
